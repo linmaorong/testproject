@@ -5,7 +5,7 @@
 # git与github之间的传输是通过SSH加密的，所以第一步先在本地生成一.ssh
 # 1. 先查看本地是否有.ssh文件，有的话删掉　　cd ~/.ssh
   2. ssh-keygen -t rsa -C "your email@.com"
-  3. 这样就表示成功了，会在C盘的 用户目录的根目录下生成一个.ssh文件，如果找不到，可以搜索一下，文件下会有id_rsa与id_rsa.pug俩个文件
+  3. 这样就表示成功了，会在C盘的 用户目录的根目录下生成一个.ssh文件，如果找不到，可以搜索一下，文件下会有id_rsa与id_rsa.pug俩个文件  (cat ~/.ssh/id_rsa.pub   得到生成的密钥)
   4. ssh -t git@github.com 检测是否链接成功
   5. 上传项目
      在终端找到自己的项目
